@@ -1,13 +1,11 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.1' 
+VERSION = '0.0.2' 
 DESCRIPTION = 'este paquete le permite formatear cedulas dominicanas'
 
 
-# Configurando
 setup(
-       # el nombre debe coincidir con el nombre de la carpeta       
-       #'modulomuysimple'
+      
         name="cedula_do", 
         version=VERSION,
         author="Eduardo Tejada",
@@ -15,8 +13,7 @@ setup(
         description=DESCRIPTION,
         
         packages=find_packages(),
-        install_requires=['numpy', 'gc'], # añade cualquier paquete adicional que debe ser
-        #instalado junto con tu paquete. Ej: 'caer'
+        install_requires=['numpy'], 
         
         keywords=['python', 'cedulas', 'formateo'],
         
